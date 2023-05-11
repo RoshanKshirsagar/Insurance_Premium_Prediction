@@ -1,0 +1,27 @@
+[ 2023-05-11 17:46:57,419 ] 15 root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Ingestion <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[ 2023-05-11 17:46:57,419 ] 22 root - INFO - Exporting collection data as pandas dataframe
+[ 2023-05-11 17:46:57,419 ] 21 root - INFO - Reading data from database: insurance and collection: insur_coll
+[ 2023-05-11 17:46:57,492 ] 23 root - INFO - Found columns: Index(['_id', 'age', 'sex', 'bmi', 'children', 'smoker', 'region', 'expenses'], dtype='object')
+[ 2023-05-11 17:46:57,493 ] 25 root - INFO - Dropping column: _id 
+[ 2023-05-11 17:46:57,495 ] 27 root - INFO - Row and columns in df: (4014, 7)
+[ 2023-05-11 17:46:57,495 ] 28 root - INFO - Save data in feature store
+[ 2023-05-11 17:46:57,498 ] 34 root - INFO - Create feature store folder if not available
+[ 2023-05-11 17:46:57,499 ] 38 root - INFO - Save df to feature store folder
+[ 2023-05-11 17:46:57,550 ] 43 root - INFO - split dataset into train and test set
+[ 2023-05-11 17:46:57,553 ] 47 root - INFO - create dataset directory folder if not available
+[ 2023-05-11 17:46:57,553 ] 52 root - INFO - Save df to feature store folder
+[ 2023-05-11 17:46:57,628 ] 64 root - INFO - Data ingestion artifact: DataIngestionArtifact(feature_store_file_path='/config/workspace/artifact/05112023__174657/data_ingestion/feature_store/Insurance.csv', train_file_path='/config/workspace/artifact/05112023__174657/data_ingestion/dataset/train.csv', test_file_path='/config/workspace/artifact/05112023__174657/data_ingestion/dataset/test.csv')
+[ 2023-05-11 17:46:57,630 ] 22 root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Validation <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[ 2023-05-11 17:46:57,630 ] 111 root - INFO - Reading base dataframe
+[ 2023-05-11 17:46:57,636 ] 114 root - INFO - Replace na value in base df
+[ 2023-05-11 17:46:57,637 ] 116 root - INFO - Drop null values colums from base df
+[ 2023-05-11 17:46:57,639 ] 45 root - INFO - selecting column name which contains null above to 0.2
+[ 2023-05-11 17:46:57,639 ] 48 root - INFO - Columns to drop: []
+[ 2023-05-11 17:46:57,640 ] 119 root - INFO - Reading train dataframe
+[ 2023-05-11 17:46:57,648 ] 121 root - INFO - Reading test dataframe
+[ 2023-05-11 17:46:57,652 ] 124 root - INFO - Drop null values colums from train df
+[ 2023-05-11 17:46:57,655 ] 45 root - INFO - selecting column name which contains null above to 0.2
+[ 2023-05-11 17:46:57,655 ] 48 root - INFO - Columns to drop: []
+[ 2023-05-11 17:46:57,656 ] 126 root - INFO - Drop null values colums from test df
+[ 2023-05-11 17:46:57,658 ] 45 root - INFO - selecting column name which contains null above to 0.2
+[ 2023-05-11 17:46:57,658 ] 48 root - INFO - Columns to drop: []
