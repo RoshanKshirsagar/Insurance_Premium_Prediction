@@ -3,8 +3,12 @@
 ```bash
 pip install -r requirements.txt
 ```
+### Step 2 - Dump the dataset into mongodb database
 
-### Step 2 - Run main.py file
+```bash
+python data_dump.py
+```
+### Step 3 - Run main.py file
 
 ```bash
 python main.py
