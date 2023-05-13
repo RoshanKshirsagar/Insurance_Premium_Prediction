@@ -17,6 +17,7 @@ insurance/entity/__init__.py
 insurance/entity/artifact_entity.py
 insurance/entity/config_entity.py
 insurance/pipeline/__init__.py
+insurance/pipeline/batch_prediction.py
 insurance/pipeline/training_pipeline.py
 sensor.egg-info/PKG-INFO
 sensor.egg-info/SOURCES.txt
