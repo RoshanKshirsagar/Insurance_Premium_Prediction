@@ -70,7 +70,6 @@ class DataTransformation:
             target_feature_test_df = test_df[TARGET_COLUMN]
 
             label_encoder = LabelEncoder()
-            ## fit Data
 
             target_feature_train_arr = target_feature_train_df.squeeze()
             target_feature_test_arr = target_feature_test_df.squeeze()
@@ -111,7 +110,7 @@ class DataTransformation:
                 transform_object_path = self.data_transformation_config.transform_object_path,
                 transformed_train_path = self.data_transformation_config.transform_train_path,
                 transformed_test_path = self.data_transformation_config.transform_test_path,
-
+                feature_encoder_path = self.data_transformation_config.feature_encoder_path
             )
 
             return data_transformation_artifacts

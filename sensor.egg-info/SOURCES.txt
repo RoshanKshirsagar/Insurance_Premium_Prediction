@@ -4,6 +4,7 @@ insurance/__init__.py
 insurance/config.py
 insurance/exception.py
 insurance/logger.py
+insurance/predictor.py
 insurance/utils.py
 insurance/components/__init__.py
 insurance/components/data_ingestion.py
